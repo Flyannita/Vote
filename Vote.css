@@ -1,0 +1,154 @@
+#Names{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.DontSEE{
+    display: none;
+}
+
+.notAllHowOthers{
+    background-color:  rgb(236, 196, 255);
+    border: 0cap;
+    color:#281d55;
+}
+.notAllHowOthers:hover{
+    color:#ff009d;
+    background-color:  rgb(236, 196, 255);
+}
+
+.x{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px; 
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color:#ff009d;
+}
+
+.x:hover{
+    color:  rgb(255, 255, 255);
+}
+
+#Enter{
+    width: 60%;
+    position: fixed;
+    top: 150px;
+    left: 20%;
+    height: 22%;
+    background-color: rgb(236, 196, 255);
+    padding: 50px;
+    z-index: 993;
+    box-shadow: 0 3px 15px rgb(50, 33, 58);
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+
+#enterForm{
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 10px;
+    color: #281d55;
+}
+
+h2{
+    text-align: center;
+    margin-top: 10px;
+    color: #281d55;
+}
+
+
+button{
+    width: 1000px;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(235, 219, 255);
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+    color: #281d55;
+}
+
+button:hover{
+    background-color: rgb(250, 73, 176);
+    color: aliceblue;
+}
+
+
+.IntrstText{
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#admin{
+    position: absolute;
+    top: 50px ;
+    right: 10px;
+    width: 200px;
+}
+
+.PurpleColor{
+    background-color: rgb(250, 73, 176);
+    pointer-events: none;
+}
+
+.GreyColor{
+    background-color: rgb(182, 150, 177);
+    pointer-events: none;
+}
+
+.mini{
+    width: 200px;
+}
+
+.flexsist{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+
+
+.special{
+    opacity: 0.5;
+    z-index: 994; 
+}
+
+
+.Votes{
+    position: fixed;
+    right: 300px;
+    z-index: 994;
+}
+
+.Rows{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    width: 500px;
+    transform: scale(1);
+    z-index: 991;
+}
+
+.pinks{
+    background-color: rgb(250, 73, 176);
+    opacity: 0.7; 
+    position: fixed;
+    height: 16px;
+    z-index: 990;
+    width: 50%;
+    border-radius: 20px;
+}

@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>
+  Опрос
+</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Seymour+One&display=swap" rel="stylesheet">
+<link  rel="stylesheet" href="Vote.css">
+</head>
+<body>
+<div id = "Container">
+    <h1 class = "IntrstText">
+    Опрос
+    </h1>
+    <h2 class = "IntrstText">
+        Кто спит меньше всех
+    </h2>
+    <div id = "Names">
+        <button class = "IntrstText buttonchik" id="Flyna" name="Флюня">Флюня</button>
+        <button class = "IntrstText buttonchik" id="Tim" name="Тим">Тим</button>
+        <button class = "IntrstText buttonchik" id="Oksi" name="Окси">Окси</button>
+        <button class = "IntrstText buttonchik" id="Zlata" name="Злата">Злата</button>
+    </div>
+    <button class = "IntrstText" id="admin" onclick="BYEnter()">Для админов</button>
+</div>
+
+<div id = "Enter" class="DontSEE">
+        <h1 class = "IntrstText">
+            Вход
+        </h1>
+        <span class="x" onclick="exitWindowEnter()" id="XE">&times;</span>
+    <form id="enterForm">
+        <input placeholder = "Почта" type = "text" name="mail" id="emailEnter" class = "IntrstText">
+        <input placeholder = "Пароль" type = "password" name="password" id="PasswordEnter" class = "IntrstText">
+        <input value = "Войти" type = "button" onclick = "EnterInStaticGraf()" name="button" id="buttonE" class = "IntrstText">
+    </form>
+</div>
+
+<div id="StaticGraf" class="DontSEE flexsist">
+    <button class = "IntrstText mini" onclick="GOtoStatistics()">Статистика</button>
+    <button class = "IntrstText mini" onclick="GOtoSchedule()">График</button>
+</div>
+<div id="Statistics" class="DontSEE flexsist">
+    <h1 class = "IntrstText"> 
+        Статистика
+    </h1>
+    <div id="Amount1">
+        <div class="Rows">
+            <div class = "IntrstText special" id="FlynaIs" name="Флюня">Флюня</div>
+            <span class="IntrstText Votes" id="FlynaSpan"></span>
+            <div class="pinks" id="Pink1"></div>
+        </div>
+    </div>
+    <div id="Amount2">
+        <div class="Rows">
+            <div class = "IntrstText special" id="TimIs" name="Тим">Тим</div>
+            <span class="IntrstText Votes" id="TimSpan"></span>
+            <div class="pinks" id="Pink2"></div>
+        </div>
+    </div>
+    <div id="Amount3"> 
+        <div class="Rows">
+             <div class = "IntrstText special" id="OksiIs" name="Окси">Окси</div>
+            <span class="IntrstText Votes" id="OksiSpan"></span>
+            <div class="pinks" id="Pink3"></div>
+        </div>
+    </div>
+    <div id="Amount4"> 
+        <div class="Rows">
+            <div class = "IntrstText special" id="ZlataIs" name="Злата">Злата</span></div>
+            <span class="IntrstText Votes" id="ZlataSpan"></span>
+            <div class="pinks" id="Pink4"></div>
+        </div>
+    </div>
+    <button onclick="ExitStatistics()" class = "IntrstText mini">обратно</button>
+</div>
+<div id="Schedule" class="DontSEE flexsist">
+    <h1 class = "IntrstText">
+        График
+    </h1>
+    <canvas id="Grafic"></canvas>
+    <button onclick="ExitSchedule()" class = "IntrstText mini">обратно</button>
+</div>
+<script src="Vote.js"></script>
+</body>
+</html>

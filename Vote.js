@@ -17,7 +17,7 @@ else{
 
 
 async function SendVote(Name){
-    https = "http://127.0.0.1:5000/add"
+    https = "https://servervote.onrender.com/add"
     try{
         post_response = await fetch(https,{ 
         method: "POST",
@@ -112,7 +112,7 @@ async function EnterInStaticGraf(){
     NForma = new FormData(forma)
     Email = NForma.get("mail")
     PasswordPost = NForma.get("password")
-    https = "http://127.0.0.1:5000/login"
+    https = "https://servervote.onrender.com/login"
     post_response = await fetch(https,{ 
     method: "POST",
     headers: {"Content-Type": "application/json"},
@@ -127,7 +127,7 @@ async function EnterInStaticGraf(){
         exits.style.display = "none"
         if (IsAdmin=="false"){
             Names = document.getElementById(ChoiseUsers).name
-            httpses = "http://127.0.0.1:5000/deleteAdmin"
+            httpses = "https://servervote.onrender.com/deleteAdmin"
             posts_response = await fetch(httpses,{ 
             method: "POST",
             headers: {"Content-Type": "application/json"},
@@ -153,7 +153,7 @@ async function EnterInStaticGraf(){
 
 
 async function StatisticsGet(){
-    https = "http://127.0.0.1:5000/statistic"
+    https = "https://servervote.onrender.com/statistic"
     get_response = await fetch(https)
     data = await get_response.json()
     return data
